@@ -43,8 +43,6 @@ def train(discriminator:Sequential, generator:Sequential, gan:Sequential, latent
 
         if (i+1) % evalFreq == 0:
             evaluatePerformance(i, discriminator, generator, latentDim)
-            quit()
-
 
 if __name__ == '__main__':
     discriminator = createDiscriminator()
